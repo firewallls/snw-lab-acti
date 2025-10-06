@@ -1,0 +1,131 @@
+<!--Question 1 (Easy): Styling a Simple Grocery List-->
+<!--Problem: Create an unordered list (<ul>) for a grocery list with three items:
+"Apples", "Milk", and "Bread". Use inline CSS to:-->
+<!--    Change the list's bullet points to squares (list-style-type: square;)
+and make the font italic (font-style: italic;).-->
+<!--    Give each list item's text a color of green.-->
+<!--    Goal: An italicized list with square bullet points, where the text for each item is green.-->
+<!--Question 2 (Medium): Creating a Simple User Table-->
+<!--Problem: Create a 2x3 HTML table to display user information. The first row
+should be a header with "First Name" and "Last Name". The next two rows should contain user data.Use inline CSS to:-->
+<!--Give the entire table a border of 1px solid black and set border-collapse: collapse;.-->
+<!--Give all table cells (<th> and <td>) a border of 1px solid black.-->
+<!--    Give the header cells (<th>) a background-color of #f2f2f2.-->
+<!--    (No padding should be used).-->
+<!--    Goal: A clean, compact, bordered table where the header row has a light gray background.-->
+<!--Question 3 (Medium): Styling a Nested To-Do List-->
+<!--Problem: Create a nested ordered list (<ol>) for a project to-do list. The top-level items are "Phase 1" and "Phase 2". Under "Phase 1", create a nested unordered list (<ul>) with the tasks "Design Mockups" and "Create User Stories". Use inline CSS to:-->
+<!--    Change the main ordered list to use Roman numerals (list-style-type: upper-roman;) and a font-style of oblique.-->
+<!--    Make the top-level list items ("Phase 1", "Phase 2") bold (font-weight: bold;).-->
+<!--    Give the nested task items a background-color of lightyellow.-->
+<!--    Goal: A numbered list with Roman numerals and oblique text, where the main items are bold, and the sub-tasks under "Phase 1" have a yellow background.-->
+<!--Question 4 (Hard): A Styled Class Schedule Table-->
+<!--Problem: Create a 3x3 table for a class schedule. The header row should contain "Time", "Monday", and "Tuesday". The data rows should contain schedule information. Use inline CSS to:-->
+<!--Give the table a width of 100% and a border-collapse: collapse;.-->
+<!--Style the header cells (<th>) with a background-color of #4CAF50 (a shade of green) and a text color of white.-->
+<!--    Style the data cells (<td>) with text-align: center;.-->
+<!--    Make the background color of every second row (<tr>) #f2f2f2 (light gray) to create a "zebra stripe" effect for better readability.-->
+<!--        (No padding should be used).-->
+<!--        Goal: A full-width, professional-looking schedule table with a green header, centered text, and alternating row colors, with no extra spacing inside the cells.-->
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body{
+            display: flex;
+            gap: 3rem;
+        }
+        table, tr, td, th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Solution 1</h1>
+        <div>
+            <h2>My Grocery List</h2>
+            <ul style="list-style-type:square; font-style: italic; color: green;" >
+                <li>Apples</li>
+                <li>Bread</li>
+                <li>Milk</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h1>Solution 2</h1>
+        <div>
+            <h2>User Information</h2>
+            <table style="border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th>First name</th>
+                        <th>Last name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tanmay</td>
+                        <td>Kumar</td>
+                    </tr>
+                    <tr>
+                        <td>Prakash</td>
+                        <td>Prakash</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <h1>Solution 3</h1>
+        <div>
+            <h2>Project To-Do List</h2>
+            <ol style="list-style-type: upper-roman; font-style:oblique">
+                <li style="font-weight: bold">
+                    Phase 1
+                    <ul style="font-style: italic;" >
+                        <li style="background-color:lightyellow">Design Mockups</li>
+                        <li style="background-color:lightyellow">Create User Stories</li>
+                    </ul>
+                </li>
+                <li style="font-weight: bold">
+                    Phase 2
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section>
+        <h1>Solution 4</h1>
+        <div>
+            <h2>Weekly Class Schedule</h2>
+            <table style="border-collapse: collapse; width:600px;">
+                <thead>
+                <tr style="background-color: #4CAF50; color: white;">
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                </tr>
+                </thead>
+                <tbody style="text-align: center;">
+                <tr style="">
+                    <td>9:00 AM - 10:00 AM</td>
+                    <td>Math</td>
+                    <td>History</td>
+                </tr>
+                <tr style="background-color: lightgrey;">
+                    <td>10:00 AM - 11:00 AM</td>
+                    <td>Science</td>
+                    <td>English</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
